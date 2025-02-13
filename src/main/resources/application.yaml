@@ -1,0 +1,14 @@
+server:
+  port: 8091
+
+
+cloud:
+  aws:
+    region:
+      static: ap-south-1
+      auto: false
+    credentials:
+      access-key: ${AWS_ACCESS_KEY}
+      secret-key: ${AWS_SECRET_KEY}
+    topic-endPoint:
+      uri: ${AWS_SNS_TOPIC_ARN}
